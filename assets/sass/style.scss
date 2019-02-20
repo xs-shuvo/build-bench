@@ -30,6 +30,7 @@
 */
 
 
+
 body{
 	&.boxed-layout{
 		background-image:url("../images/boxed_bg.png"); 
@@ -1387,13 +1388,14 @@ ul.navbar-nav {
 
 			li {
 				a {
-					font-size: 14px;
+					font-size: 13px;
 					display: block;
 					color: #fff;
 					text-transform: uppercase;
 					padding: 12px 0;
 					border-top: 1px solid #3e3e3e;
 					border-bottom: 1px solid #040404;
+					font-weight: 600;
 					&:hover {
 						color: $color-primary;
 					}
@@ -1716,7 +1718,7 @@ ul.navbar-nav {
             color: $color-primary;
             margin: 0;
          }
-         label{
+         span{
             display: block;
             font-weight: 700;
             margin-bottom: 0;
