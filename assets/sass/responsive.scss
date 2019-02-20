@@ -15,9 +15,6 @@
         line-height: 34px;
     }
 
-    .slider-content {
-        min-height: 548px !important;
-    }
 
     .intro-image-box{
         margin-top: 30px;
@@ -43,8 +40,8 @@
     .nav-search{
         display: none;
     }
-    .navbar-nav > li > a{
-        padding: 0 15px !important;
+    ul.navbar-nav > li > a{
+        padding: 0 8px;
     }
 
     /* Home 3 */
@@ -64,31 +61,47 @@
 
 @media(min-width: 768px) and (max-width: 991px){
 
+    .top-bar .header-nav-right-info, .top-bar li{
+        padding: 0;
+    }
     .navbar {
         padding: 10px;
         
     }
+    
 
-    .navbar-nav{
+    ul.navbar-nav{
         li{
-            &:after{
-                position: absolute;
-                font-family: 'FontAwesome';
-                content: "\f107";
-                right: 0;
-                top: 0;
-                font-size: 25px;
-                line-height: 60px;
-                color: #fff;
-                }
+          
             a{
                 position: relative;
-                
+          
+
+            }
+            .dropdown-menu li a{
+                border: none;
+            }
+        }
+        >li{
+            >a{
+                line-height: 60px;
+                &:before{
+                    position: absolute;
+                    font-family: 'FontAwesome';
+                    content: "\f107";
+                    right: 15px;
+                    top: 0;
+                    font-size: 25px;
+                    line-height: 60px;
+                    color: #fff;
+                    font-size: 14px;
+             }
             }
         }
     }
 
-    .nav-search{
+    .nav-search,
+    .nav-right.form-inline{
         display: none;
     }
 
@@ -138,6 +151,11 @@
         .ts-feature {
             margin-bottom: 30px;
         }
+    }
+    .ts-feature-block .feature-block-intro,
+    .feature-block-desc{
+        max-width: 100%;
+        padding-left: 20px;
     }
 
     .ts-project-area {
@@ -190,8 +208,7 @@
     }
 
     .ts-footer-info-box{
-        position: relative;
-        top: 30px;
+        margin-top: 30px;
         margin-bottom: 20px;
     }
 
@@ -229,6 +246,8 @@
             }
         }
     }
+
+
 
 
 /* Sub Pages
@@ -281,7 +300,6 @@
         li{
             a{
                 color: #fff;
-                padding-left: 25px;
             }
         }
     }
@@ -345,9 +363,9 @@
         }
     }
 
-    .quote_form{
-        padding: 20px 30px 0px;   
-      }
+    .accordion-area{
+        padding: 50px 0 0;
+    }
     
 }
 
@@ -358,21 +376,34 @@
         
     }
 
-    .navbar-nav{
+
+    ul.navbar-nav{
         li{
-            &:after{
-                position: absolute;
-                font-family: 'FontAwesome';
-                content: "\f107";
-                right: 0;
-                top: 0;
-                font-size: 25px;
-                line-height: 60px;
-                color: #fff;
-                }
+          
             a{
                 position: relative;
+                padding: 0;
+
+            }
+            .dropdown-menu li a{
+                border: none;
+            }
+        }
+        >li{
+            >a{
+                line-height: 60px;
                 
+                &:before{
+                    position: absolute;
+                    font-family: 'FontAwesome';
+                    content: "\f107";
+                    right: 15px;
+                    top: 0;
+                    font-size: 25px;
+                    line-height: 60px;
+                    color: #fff;
+                    font-size: 14px;
+             }
             }
         }
     }
@@ -381,7 +412,8 @@
         text-align: left;
     }
 
-    .nav-item a:after{
+    .nav-item a:after,
+    .navbar .nav-right .nav-search-btn{
         display: none;
     }
     .nav-item:hover .dropdown-menu{
@@ -392,13 +424,16 @@
         li{
             a{
                 color: #fff;
-                padding-left: 25px;
+                padding: 5px 0;
             }
         }
     }
 
     .ts-funfact{
         padding-top: 70px !important;
+    }
+    .funfact-item li{
+    padding: 40px 20px;
     }
 
     .ts-service-content{
@@ -512,13 +547,15 @@
     .recent-folio-menu ul li{
         padding: 0 20px;
         font-weight: 500;
-        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .single-funfact{
         padding-bottom: 40px;
     }
-
+    .quote_form {
+        padding: 50px 20px 61px;
+    }
     
     .testimonial-carousel{
         &.owl-carousel {
@@ -547,9 +584,12 @@
         }
     }
 
+    .ts-footer{
+        margin-top: 0;
+    }
     .ts-footer-info-box{
         position: relative;
-        top: 30px;
+        margin-top: 30px;
         margin-bottom: 20px;
     }
 
@@ -620,13 +660,7 @@
     }
 
     .feature-block-desc{
-        padding: 50px 80px 50px 40px;
-    }
-
-    .ts-feature-block {
-        .feature-block-intro{
-            padding: 80px 60px;
-        }
+        padding: 50px 80px 50px 20px;
     }
 
     .slider-content {
@@ -691,11 +725,11 @@
             }
         }
         
-        .ts-service-quality{
-            .ts-service-box-info{
-                padding-right: 100px;
-            }
-        }
+        // .ts-service-quality{
+        //     .ts-service-box-info{
+        //         padding-right: 100px;
+        //     }
+        // }
 
         .testimonial-carousel{
             .owl-nav{
@@ -721,10 +755,10 @@
             a{
                 &.btn{
                     margin-top: 20px;
-                    
+                    margin-right: 15px;
                 }
                 &.btn-border{
-                    margin-left: 15px !important;
+                    margin-left: 0px !important;
                 }
             }
         }
@@ -732,7 +766,7 @@
         .slider-content{
             .slider-title{
                 font-size: 36px !important;
-    line-height: 40px !important;
+                line-height: 40px !important;
             }
         }
 
@@ -761,10 +795,9 @@
       }
   }
 
-  .quote_form{
-    padding: 20px 30px 0px;   
+  .accordion-area{
+      padding: 50px 0 0;
   }
-
 
 }
 
