@@ -1,0 +1,461 @@
+
+/*============================================================
+	1. Typography
+=============================================================*/
+
+@import 'variable';
+
+body {
+	font-family: $openSansFont;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRoboto:400,500,700,900%7CPlayfair+Display:400,700,700i,900,900i%7CWork+Sans:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800,900');
+
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	-moz-outline: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+}
+
+a:active,
+a:focus,
+a:hover,
+a:visited {
+	text-decoration: none;
+	outline: 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.clear-both:before,
+.clear-both:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+p {
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0 0 15px;
+	font-family: $openSansFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $title-color;
+	margin: 0 0 15px;
+	font-family: $montserratFont;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 42px;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 38px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 600;
+}
+
+.ts-service-title{
+	font-size: 22px;
+	line-height: 28px;
+}
+.ts-post-title,
+.ts-author-title{
+	font-size: 20px;
+}
+.ts-single-title,
+.widget-title{
+	font-size: 24px;
+}
+.ts-blog-title{
+	font-size: 24px;
+	line-height: 34px;
+	a{
+		color: $title-color;
+	}
+}
+.title-white{
+	color: #fff;
+}
+
+/*=========================
+  inharitance css
+ ==========================*/
+
+//margins
+
+.margin-0 {
+	margin: 0;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+
+.mb-70 {
+	margin-bottom: 70px;
+}
+
+.mb-80 {
+	margin-bottom: 80px;
+}
+
+.mb-90 {
+	margin-bottom: 90px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+.mr-0{
+	margin-right: 0px !important;
+}
+.mt-5 {
+	margin-top: 5px !important;
+}
+.mr-30 {
+	margin-right: 30px !important;
+}
+
+// ts padding
+.padding-0 {
+	padding: 0 !important;
+}
+.pt-100{
+	padding-top: 100px;
+}
+.pt-80{
+	padding-top: 80px;
+}
+.pl-0 {
+	padding-left: 0;
+}
+.pb-10 {
+	padding-bottom: 10px;
+}
+.pb-20 {
+	padding-bottom: 20px;
+}
+.pb-30 {
+	padding-bottom: 30px;
+}
+.pb-40 {
+	padding-bottom: 40px;
+}
+.pb-50 {
+	padding-bottom: 50px;
+}
+.pb-60 {
+	padding-bottom: 60px;
+}
+.pb-70 {
+	padding-bottom: 70px;
+}
+.pb-80 {
+	padding-bottom: 80px;
+}
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+//section padding
+
+.section-padding{
+	padding: 80px 0px;
+}
+
+// Button
+
+.btn{
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 12px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	 border-radius: 0px;
+	 padding: 10px 27px;
+	font-weight: 700;
+	 i{
+		 margin-left: 10px;
+	 }
+}
+
+.btn-primary{
+	background: #ffb923;
+	color: #101010;
+	border: 1px solid #ffb923;
+	&:hover{
+		background: #222222;
+		color: #fff;
+		border-color: #222222;
+	}
+}
+
+.btn-border{
+	border: 1px solid #fff;
+	color: #fff !important;
+	&:hover{
+		background: #ffb923;
+	color: #222222;
+	border-color: #ffb923;
+	}
+}
+
+/* Title*/
+
+.section-title{
+	margin-bottom: 60px;
+	text-align: center;
+	span{
+	   font-size: 16px;
+	 line-height: 24px;
+	 display: block;
+	 font-weight: 500;
+	 color: $small-title-color;
+	 margin-bottom: 15px;
+	}
+ }
+
+.column-title{
+	margin-bottom: 30px;
+	span{
+	   font-size: 16px;
+	 line-height: 24px;
+	 margin: 0 0 10px 0;
+	 display: block;
+	 font-weight: 500;
+	 color: $small-title-color;
+	 margin-bottom: 20px;
+	}
+ }
+
+ .ts-title{
+	 font-size: 24px;
+	 line-height: 32px;
+ }
+
+ /* Colors */
+
+ .bg-blue{
+	 background: #0285a8;
+ }
+
+ .bg-pink{
+	 background: #da727e;
+ }
+
+ .bg-skyblue{
+	background: #02bec4;
+}
+
+.bg-dark-blue{
+	background: #455c7b;
+}
+
+.bg-color{
+	background: #f1f1f1;
+}
+
+.bg-yellow{
+	background: #f5b315;
+}
+
+.solid-bg {
+	background: #f7f7f7;
+}
+
+.bg-dark{
+	background: #24272a;
+}
+
+.color-green{
+	color: #01b33b;
+}
+.color-orange{
+	color: #ffb923;
+}
+.color-white{
+	color: #fff;
+}
+
+.carousel-wrap {
+	padding: 0 5%;
+	width: 80%;
+	position: relative;
+ }
+ 
+ /* fix blank or flashing items on carousel */
+
+ 
+ /* end fix */
+ .owl-nav > div {
+	margin-top: -26px;
+	position: absolute;
+	top: 50%;
+	color: #cdcbcd;
+ }
+ 
+ .owl-nav i {
+	font-size: 52px;
+ }
+ 
+ .owl-nav .owl-prev {
+	left: -30px;
+ }
+ 
+ .owl-nav .owl-next {
+	right: -30px;
+ }
+
+ 	/*-- Banner --*/
+
+.banner-area {
+   position: relative;
+   color: #fff;
+	backface-visibility: hidden;
+	margin-top: 5px;
+}
+
+.banner-area.bg-overlay:after {
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-area .container {
+   position: relative;
+}
+
+.banner-title {
+   color: #fff;
+	font-size: 30px;
+   margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+   .banner-title {
+      font-size: 50px;
+   }
+}
+
+.banner-heading {
+   width: 100%;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+	align-content: center;
+	min-height: 225px;
+}
+
+.breadcrumb {
+   padding: 0;
+   background: none;
+   font-size: 16px;
+	font-weight: 500;
+	li{
+		a{
+			color: #fff;
+			&:hover{
+				color: #007bff;
+			}
+		}
+	}
+}
+
+.breadcrumb a:hover {
+   color: #fff;
+}
+
+.breadcrumb li:not(:last-child) {
+   position: relative;
+}
+
+.breadcrumb li:not(:last-child):after {
+   padding: 0 5px;
+   color: #fff;
+   content: "/\00a0";
+}
+
+
+
+
+
+
+
+
+
+

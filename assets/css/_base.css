@@ -1,0 +1,144 @@
+/*============================================================
+	1. Typography
+=============================================================*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+  -moz-outline: none;
+  outline: none; }
+
+a {
+  text-decoration: none;
+  outline: 0; }
+
+a:active,
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+  outline: 0; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.clear-both:before,
+.clear-both:after {
+  display: table;
+  content: "";
+  clear: both; }
+
+p {
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0 0 15px;
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #282828;
+  margin: 0 0 15px;
+  font-weight: 600; }
+
+h1 {
+  font-size: 72px;
+  line-height: 60px; }
+
+h2 {
+  font-size: 48px;
+  line-height: 55px; }
+
+h3 {
+  font-size: 30px;
+  line-height: 28px; }
+
+h3 {
+  font-size: 30px;
+  line-height: 28px; }
+
+h4 {
+  font-size: 22px;
+  line-height: 28px; }
+
+h5 {
+  font-size: 20px;
+  line-height: 28px; }
+
+h6 {
+  font-size: 18px;
+  line-height: 26px; }
+
+.xs-service-title {
+  font-size: 22px;
+  line-height: 28px; }
+
+.xs-post-title,
+.xs-author-title {
+  font-size: 20px; }
+
+.xs-single-title,
+.widget-title {
+  font-size: 24px; }
+
+.xs-blog-title {
+  font-size: 24px;
+  line-height: 34px; }
+  .xs-blog-title a {
+    color: #282828; }
+
+/*=========================
+  inharitance css
+ ==========================*/
+.xs-margin-0 {
+  margin: 0; }
+
+.xs-mb-0 {
+  margin-bottom: 0; }
+
+.xs-mb-10 {
+  margin-bottom: 10px; }
+
+.xs-mb-20 {
+  margin-bottom: 20px; }
+
+.xs-mb-30 {
+  margin-bottom: 30px; }
+
+.xs-mb-40 {
+  margin-bottom: 40px; }
+
+.xs-mb-50 {
+  margin-bottom: 50px; }
+
+.xs-mb-60 {
+  margin-bottom: 60px; }
+
+.xs-mb-70 {
+  margin-bottom: 70px; }
+
+.xs-mb-80 {
+  margin-bottom: 80px; }
+
+.xs-mb-90 {
+  margin-bottom: 90px; }
+
+.xs-mb-100 {
+  margin-bottom: 100px; }
+
+.xs-padding-0 {
+  padding: 0; }

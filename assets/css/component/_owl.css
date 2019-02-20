@@ -1,0 +1,26 @@
+/* owl preset */
+.owl-carousel .owl-item {
+  opacity: 0;
+  visibility: hidden; }
+  .owl-carousel .owl-item img {
+    width: auto; }
+  .owl-carousel .owl-item .text-center img {
+    margin-left: auto;
+    margin-right: auto; }
+  .owl-carousel .owl-item.active {
+    opacity: 1;
+    visibility: visible; }
+
+/* owl navigation */
+.owl-nav button > i {
+  display: inline-block;
+  padding: 0 9px;
+  font-size: rem(12px); }
+
+/* dot style 2 */
+.dot-style2 .owl-dots button.owl-dot span {
+  background-color: #e7e7e7;
+  border-width: 1px; }
+
+.dot-style2 .owl-dots button.owl-dot.active span {
+  background-color: transparent; }
