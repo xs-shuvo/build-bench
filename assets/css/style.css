@@ -302,6 +302,7 @@ h6 {
 
 .column-title {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .column-title span {
@@ -311,7 +312,6 @@ h6 {
   display: block;
   font-weight: 500;
   color: #ffb923;
-  margin-bottom: 20px;
 }
 
 .ts-title {
@@ -1065,11 +1065,6 @@ span.author-designation {
   border-bottom: 3px solid #ffb923;
 }
 
-.ts-latest-news .single-latest-news:hover {
-  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
 .ts-latest-news .single-latest-news .latest-news-img img {
   width: 100%;
   height: auto;
@@ -1205,6 +1200,7 @@ span.author-designation {
 =============================*/
 .ts-footer {
   padding: 75px 0 50px;
+  margin-top: 50px;
   position: relative;
   z-index: 2;
 }
@@ -1260,15 +1256,16 @@ span.author-designation {
 }
 
 .ts-footer-info-box {
-  position: absolute;
-  top: -113px;
+  position: relative;
+  top: 0;
   background: #ffb923;
   padding: 40px;
   z-index: 2;
+  margin-top: -135px;
 }
 
 .ts-footer-info-box form .form-row input {
-  min-width: 285px;
+  width: 100%;
   font-size: 15px;
   text-transform: capitalize;
   height: 55px;
@@ -1284,9 +1281,11 @@ span.author-designation {
 
 .ts-footer-info-box form .form-btn button.btn-bordered {
   border-radius: 0px;
-  padding: 10px 75px;
+  padding: 18px 20px;
+  display: block;
   background: #101010;
   color: #fff;
+  width: 100%;
 }
 
 .ts-footer-info-box h4 {
@@ -1447,7 +1446,10 @@ span.author-designation {
 }
 
 .ts-feature-block .feature-block-intro {
-  padding: 80px 120px;
+  padding: 80px 20px;
+  max-width: 565px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .ts-feature-block .feature-block-intro h2.column-title {
@@ -1466,8 +1468,9 @@ span.author-designation {
 }
 
 .feature-block-desc {
-  padding: 80px 80px 80px 100px;
+  padding: 80px 70px 70px 80px;
   position: relative;
+  max-width: 610px;
 }
 
 .feature-block-desc .feature-block-title {
@@ -1584,22 +1587,35 @@ span.author-designation {
 
 /* FAQ 
 ======================================= */
+.accordion-area {
+  padding-left: 60px;
+}
+
+.accordion-area .column-title {
+  margin-bottom: 45px;
+}
+
 .card {
   border-radius: 0;
   border-color: #e5e5e5;
   border-bottom: none;
+  background: transparent;
+  border: none;
+  margin-bottom: 10px;
 }
 
 .card .card-header {
   background: none;
-  padding: 22px 25px 22px;
+  padding: 0;
   border: none;
+  margin-bottom: 0 !important;
 }
 
 .card .card-body {
-  padding-top: 0;
+  padding-top: 25px;
   margin-top: -5px;
   padding-left: 45px;
+  border: 1px solid #ddd;
 }
 
 .card .card-button a {
@@ -1611,15 +1627,19 @@ span.author-designation {
   display: block;
   position: relative;
   z-index: 1;
-  padding-right: 20px;
+  padding: 15px 25px 15px;
+  border: 1px solid #ddd;
 }
 
 .card .card-button a[aria-expanded="true"] {
-  color: #ffb923;
+  background: #ffb923;
+  color: #fff;
+  border-color: #ffb923;
 }
 
 .card .card-button a[aria-expanded="true"]:before {
   content: "\f068";
+  color: #fff;
 }
 
 .card .card-button a[aria-expanded="false"]:after {
@@ -1632,12 +1652,8 @@ span.author-designation {
   color: #101010;
   font-family: 'FontAwesome';
   position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.card:last-of-type {
-  border-bottom: 1px solid #e5e5e5;
+  top: 14px;
+  right: 14px;
 }
 
 .faq-sidebar .widget-faq .xs-form .form-control {
@@ -2166,7 +2182,7 @@ ul.navbar-nav {
 }
 
 .topbar .header-nav-right-info li {
-  padding: 0 0 0 30px;
+  padding: 0 0 0 35px;
   position: relative;
   margin-left: 50px;
   color: #c7c7c7;
@@ -2318,7 +2334,7 @@ ul.navbar-nav {
   background: #fff;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
-  margin: 0px;
+  margin: 0px 0px 60px;
 }
 
 .funfact-item {
@@ -2400,6 +2416,10 @@ ul.navbar-nav {
 
 .srevice-img {
   margin-bottom: 30px;
+}
+
+.srevice-img img {
+  width: 100%;
 }
 
 /*       Home 4
@@ -3356,32 +3376,47 @@ blockquote p {
 ================================================== */
 .quote_form {
   color: #fff;
-  padding: 80px 50px 100px;
-  background: #262626;
+  padding: 50px 60px 61px;
+  position: relative;
+}
+
+.quote_form:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(48, 48, 48, 0.95);
 }
 
 .quote_form .form-group {
   margin-bottom: 30px;
 }
 
+.quote_form .contact-form {
+  position: relative;
+}
+
 .quote_form .contact-form .form-group input::-webkit-input-placeholder,
 .quote_form .contact-form .form-group textarea::-webkit-input-placeholder {
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .quote_form .contact-form .form-group input:-ms-input-placeholder,
 .quote_form .contact-form .form-group textarea:-ms-input-placeholder {
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .quote_form .contact-form .form-group input::-ms-input-placeholder,
 .quote_form .contact-form .form-group textarea::-ms-input-placeholder {
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .quote_form .contact-form .form-group input::placeholder,
 .quote_form .contact-form .form-group textarea::placeholder {
-  color: #fff;
+  color: #f7f7f7;
 }
 
 .quote_form input::input-placeholder,
@@ -3401,15 +3436,18 @@ blockquote p {
 
 .quote_form .form-control {
   border: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #636363;
   padding-left: 0;
   border-radius: 0;
   background: transparent;
+  outline: none;
 }
 
 .quote_form .form-control:focus {
   border: 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ffb923;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   background: none;
   outline: none;
 }
@@ -3707,6 +3745,16 @@ blockquote p {
   outline: none;
 }
 
+.features-slider .owl-nav .owl-prev:hover,
+.features-slider .owl-nav .owl-next:hover {
+  outline: none;
+}
+
+.features-slider .owl-nav .owl-prev:hover i,
+.features-slider .owl-nav .owl-next:hover i {
+  background: #ffb923;
+}
+
 .features-slider .owl-nav .owl-next {
   right: 20px;
 }
@@ -3722,6 +3770,7 @@ blockquote p {
   height: 60px;
   font-size: 24px !important;
   border-radius: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .featured-box {
@@ -3738,7 +3787,7 @@ blockquote p {
 }
 
 .featured-box .ts-title {
-  margin-top: 2 0px;
+  margin-top: 2 0px;
 }
 
 .featured-box .ts-title a {
@@ -3772,38 +3821,49 @@ blockquote p {
   padding-top: 2px;
 }
 
-#hero-slider .owl-item.active .content-wrapper h1.slider-title {
+.owl-item.active .slider-content h1.slider-title {
   -webkit-animation-name: animLeft;
   animation-name: animLeft;
-  -webkit-animation: animLeft 1s ease 100ms both;
-  animation: animLeft 1s ease 100ms both;
+  -webkit-animation: animLeft 1s ease 500ms both;
+  animation: animLeft 1s ease 500ms both;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-animation-delay: 500ms;
-  animation-delay: 500ms;
+  -webkit-animation-delay: 700ms;
+  animation-delay: 700ms;
 }
 
-#hero-slider .owl-item.active .content-wrapper .btn {
+.owl-item.active .slider-content p {
   -webkit-animation-name: animLeft;
   animation-name: animLeft;
-  -webkit-animation: animLeft 1s ease 100ms both;
-  animation: animLeft 1s ease 100ms both;
+  -webkit-animation: animLeft 1s ease 500ms both;
+  animation: animLeft 1s ease 500ms both;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-animation-delay: 800ms;
-  animation-delay: 800ms;
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms;
+}
+
+.owl-item.active .slider-content .btn {
+  -webkit-animation-name: animLeft;
+  animation-name: animLeft;
+  -webkit-animation: animLeft 1s ease 500ms both;
+  animation: animLeft 1s ease 500ms both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation-delay: 1000ms;
+  animation-delay: 1000ms;
 }
 
 @-webkit-keyframes animLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(40%, 0, 0);
-    transform: translate3d(40%, 0, 0);
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
   }
   to {
     opacity: 1;
     -webkit-transform: none;
-    transform: all .3s;
+    transform: all .5s;
   }
 }
 

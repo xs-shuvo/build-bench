@@ -624,10 +624,6 @@ body{
 	.single-latest-news {
 		position: relative;
 		border-bottom: 3px solid $color-primary;
-		&:hover {
-			box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .1);
-		
-		}
 		.latest-news-img{
 			img{
 				width: 100%;
@@ -754,6 +750,7 @@ body{
 =============================*/
 .ts-footer {
 	padding: 75px 0 50px;
+	margin-top: 50px;
 	position: relative;
 	z-index: 2;
 	.widget-details{
@@ -809,15 +806,16 @@ body{
  }
 
  .ts-footer-info-box{
-	position: absolute;
-	top: -113px;
+	position: relative;
+	top: 0;
 	background: $color-primary;
 	padding: 40px;
-	z-index: 2; 
+	z-index: 2;
+	margin-top: -135px; 
 	 form{
 		 .form-row{
 			 input{
-				min-width: 285px;
+				width: 100%;
 				font-size: 15px;
 				text-transform: capitalize;
 				height: 55px;
@@ -832,9 +830,11 @@ body{
 			 button{
 				 &.btn-bordered{
 					border-radius: 0px;
-					padding: 10px 75px;
+					padding: 18px 20px;
+					display: block;
 					background: #101010;
 					color: #fff;
+					width: 100%;
 				 }
 			 }
 		 }
@@ -1009,7 +1009,10 @@ body{
 
 	.ts-feature-block{
 		.feature-block-intro{
-			padding: 80px 120px;
+			padding: 80px 20px;
+			max-width: 565px;
+			margin-left: auto;
+			margin-right: 0;
 		}
 		.feature-block-intro{
 			h2{
@@ -1031,8 +1034,9 @@ body{
 	}
 
 	.feature-block-desc{
-		padding: 80px 80px 80px 100px;
+		padding: 80px 70px 70px 80px;
 		position: relative;
+		max-width: 610px;
 		.feature-block-title{
 			position: relative;
 			&:before{
@@ -1149,21 +1153,33 @@ body{
 
  /* FAQ 
 ======================================= */
+.accordion-area{
+	padding-left: 60px;
+	.column-title{
+		margin-bottom: 45px;
+	}
+}
 
 .card {
 	border-radius: 0;
 	border-color: #e5e5e5;
 	border-bottom: none;
-	
+	background: transparent;
+	border: none;
+	margin-bottom: 10px;
+
+
 	.card-header {
 	   background: none;
-	   padding: 22px 25px 22px;
-	   border: none;
+	   padding: 0;
+		border: none;
+		margin-bottom: 0 !important;
 	}
 	.card-body {
-	   padding-top: 0;
+	   padding-top: 25px;
 	   margin-top: -5px;
-	   padding-left: 45px;
+		padding-left: 45px;
+		border: 1px solid #ddd;
 	}
 	.card-button {
 	   a {
@@ -1173,11 +1189,15 @@ body{
 		  display: block;
 		  position: relative;
 		  z-index: 1;
-		  padding-right: 20px;
+		  padding: 15px 25px 15px;
+		  border: 1px solid #ddd;
 		  &[aria-expanded="true"] {
-			 color: $color-primary;
+			 background: $color-primary;
+				color: #fff;
+				border-color: $color-primary;
 			 &:before {
 				content: "\f068";
+				color: #fff;
 			 }
 		  }
 		  &[aria-expanded="false"] {
@@ -1192,16 +1212,15 @@ body{
 			 color: #101010;
 			 font-family:'FontAwesome';
 			 position: absolute;
-			 top: 0;
-			 right: 0;
+		    top: 14px;
+    right: 14px;
 		  }
 	   } //Card Button anchor tag
 	} //Card button
 
-	&:last-of-type{
-		border-bottom: 1px solid #e5e5e5;
-	}
  } //Card
+
+
 
  .faq-sidebar{
 	 .widget-faq{
@@ -1709,7 +1728,7 @@ ul.navbar-nav {
    .header-nav-right-info{
       padding: 0;
       li{
-         padding: 0 0 0 30px;
+         padding: 0 0 0 35px;
          position: relative;
          i{
             position: absolute;
@@ -1856,7 +1875,7 @@ ul.navbar-nav {
 .intro-about-item{
    background: #fff;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.06);
-	margin: 0px;
+	margin: 0px 0px 60px;
 
 }
 .funfact-item{
@@ -1922,7 +1941,10 @@ ul.navbar-nav {
 }
 /// srevice
 .srevice-img{
-   margin-bottom: 30px;
+	margin-bottom: 30px;
+	img{
+		width: 100%;
+	}
 }
 
 /*       Home 4
@@ -2816,8 +2838,19 @@ blockquote p {
  
  .quote_form {
 	color: #fff;
-	padding: 80px 50px 100px;
-	background: #262626;
+	padding: 50px 60px 61px;
+	position: relative;
+	&:before{
+		position: absolute;
+		content: '';
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-color: rgba(48,48,48,0.95);
+
+	}
  }
  
  .quote_form .form-group {
@@ -2826,11 +2859,12 @@ blockquote p {
 
 .quote_form{
 	.contact-form{
+		position: relative;
 		.form-group{
 			input,
 			textarea{
 			 &::placeholder{
-				 color: #fff;
+				 color: #f7f7f7;
 			 }
 			}
 		 }
@@ -2859,14 +2893,16 @@ blockquote p {
  
  .quote_form .form-control {
 	border: 0;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #636363;
 	padding-left: 0;
 	border-radius: 0;
 	background: transparent;
+	outline: none;
  }
  .quote_form .form-control:focus {
 	border: 0;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid $color-primary;
+	box-shadow: none;
 	background: none;
 	outline: none;
  }
