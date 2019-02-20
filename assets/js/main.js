@@ -25,17 +25,21 @@
       /* ----------------------------------------------------------- */
    /*  Site search
    /* ----------------------------------------------------------- */
+        if ($('.xs-modal-popup').length > 0) {
+         $('.xs-modal-popup').magnificPopup({
+             type: 'inline',
+             fixedContentPos: false,
+             fixedBgPos: true,
+             overflowY: 'auto',
+             closeBtnInside: false,
+             callbacks: {
+                 beforeOpen: function beforeOpen() {
+                     this.st.mainClass = "my-mfp-slide-bottom xs-promo-popup";
+                 }
+             }
+         });
+     }
 
-
-   $('.nav-search').on('click', function () {
-      $('.search-block').fadeIn(350);
-      $('.nav-search').addClass('hide');
-   });
-
-   $('.search-close').on('click', function () {
-      $('.search-block').fadeOut(350);
-      $('.nav-search').removeClass('hide');
-   });
 
 /*==========================================================
      banner slider
