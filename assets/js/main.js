@@ -1,4 +1,25 @@
 
+/*
+
+  Template Name: build-bench
+  Author: Themefunction
+  Version: 1.0
+  Author URI: https://themeforest.net/user/themefunction/portfolio
+  Description: Build Bench Construction html template. 
+   
+   =====================
+   table of content 
+   ====================
+   1.   menu toogle
+   2.   banner slider
+   3.   team slider
+   4.   recent work
+   5.   partners
+   6.   fun facts
+   7.   navigation
+  
+*/
+
 (function ($) {
   "use strict";
   /*------------------------------------------------------------------
@@ -19,23 +40,24 @@
 
    }
 
-
-
-
       /* ----------------------------------------------------------- */
    /*  Site search
    /* ----------------------------------------------------------- */
+        if ($('.xs-modal-popup').length > 0) {
+         $('.xs-modal-popup').magnificPopup({
+             type: 'inline',
+             fixedContentPos: false,
+             fixedBgPos: true,
+             overflowY: 'auto',
+             closeBtnInside: false,
+             callbacks: {
+                 beforeOpen: function beforeOpen() {
+                     this.st.mainClass = "my-mfp-slide-bottom xs-promo-popup";
+                 }
+             }
+         });
+     }
 
-
-   $('.nav-search').on('click', function () {
-      $('.search-block').fadeIn(350);
-      $('.nav-search').addClass('hide');
-   });
-
-   $('.search-close').on('click', function () {
-      $('.search-block').fadeOut(350);
-      $('.nav-search').removeClass('hide');
-   });
 
 /*==========================================================
      banner slider
@@ -44,11 +66,11 @@
 $(".features-slider").owlCarousel({
    items: 1,
    loop: true,
-   smartSpeed: 1000,
-   dots: false,
-   nav: true,
-   navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-   autoplay: true,
+   smartSpeed: 2000,
+   dots: true,
+   nav: false,
+   // navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+   autoplay: false,
    mouseDrag: true,
    responsive: {
       0: {
@@ -66,10 +88,43 @@ $(".features-slider").owlCarousel({
    }
 });
 
+/*==========================================================
+     team slider
+============================================================*/
+
+if ($('#ts-team-slider').length > 0) {
+   $('#ts-team-slider').owlCarousel({
+       nav: false,
+       items: 4,
+       loop: true,
+       reponsiveClass: true,
+       navText: ['<i class="icon icon-arrow-left"></i>', '<i class="icon icon-arrow-right"></i>'],
+       dots: true,
+       responsive: {
+           // breakpoint from 0 up
+           0: {
+               items: 1,
+           },
+           // breakpoint from 480 up
+           480: {
+               items: 2,
+           },
+           // breakpoint from 768 up
+           768: {
+               items: 2,
+           },
+           // breakpoint from 768 up
+           1200: {
+               items: 4,
+           }
+       }
+   });
+}
+
 
  /*==========================================================
      recent work
-     ======================================================================*/
+   ===========================================================*/
      $('#mixcontent').mixItUp({
       animation: {
           effects: 'fade translateX(50%)',
@@ -110,8 +165,9 @@ $(".features-slider").owlCarousel({
 	//testimonial slide
 	
 
-	
-   //Partners slide
+/*==========================================================
+     partners
+============================================================*/
 
    $("#partners-carousel").owlCarousel({
 
@@ -142,7 +198,7 @@ $(".features-slider").owlCarousel({
 
 /*==========================================================
      funfact 
-     ======================================================================*/
+============================================================*/
      var skl = true;
      $('.single-funfact').appear();
   
@@ -172,9 +228,9 @@ $(".features-slider").owlCarousel({
         }
      });
 
-          /*======================== 
-         navigation 
-    ==========================*/
+/*==========================================================
+     navigation
+============================================================*/
     if ($('.header-nav').length > 0) {
       $(".header-nav").navigation({
           effect: "fade",

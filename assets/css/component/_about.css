@@ -1,0 +1,19 @@
+.about-intro .intro-desc {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600; }
+
+.intro-image-box {
+  position: relative;
+  margin-left: 25px;
+  z-index: 9; }
+
+.intro-shape:after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+  border-left: 430px solid #ffb923;
+  border-right: 0 solid #ffb923;
+  border-top: 340px solid #ffb923;
+  top: -40px; }
