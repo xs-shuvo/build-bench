@@ -1,14 +1,13 @@
 @media (min-width: 992px) and (max-width: 1200px){
-    .main-logo{
-        padding: 39px 15px !important;
+    .main-logo {
+        padding: 46px 10px;
     }
-    .navbar {
-        .navbar-nav {
-            .nav-item{
-                padding: 0px 10px !important;
-                }
-            }
-        }
+// header box
+.header-box{
+    .nav-right.form-inline{
+       display: none;
+    }
+ }
 
     h2 {
         font-size: 26px;
@@ -41,7 +40,7 @@
         display: none;
     }
     ul.navbar-nav > li > a{
-        padding: 0 8px;
+        padding: 0 15px;
     }
 
     /* Home 3 */
@@ -51,15 +50,24 @@
             .navbar-nav{
                 li{
                     a{
-                        padding: 0px 5px !important;
+                        padding: 0px 5px;
                     }
                 }
             }
         }
+
     }  
+
+   .features-slider .slider-content {
+        height: 530px;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
+    .main-logo {
+        padding: 25px 0px;
+        margin-bottom: 15px;
+    }
 
     .top-bar .header-nav-right-info, .top-bar li{
         padding: 0;
@@ -85,6 +93,7 @@
         >li{
             >a{
                 line-height: 60px;
+                padding-left: 0;
                 &:before{
                     position: absolute;
                     font-family: 'FontAwesome';
@@ -197,7 +206,6 @@
     }
     
     .top-bar {
-        text-align: center !important;
         .unstyled{
             padding-bottom: 20px;
         }
@@ -205,6 +213,9 @@
     
     .navbar-toggler:not(:disabled):not(.disabled){
         background: #ffb923;
+    }
+    .ts-footer{
+        margin-top: 0;
     }
 
     .ts-footer-info-box{
@@ -216,11 +227,11 @@
         border-top: 37px solid #ffb923;
     }
 
-    .cta-title{
+    .cta-title,
+    .cta-btn{
         text-align: center !important ;
     }
     .cta-btn {
-        text-align: center !important;
         margin-top: 20px;
     }
 
@@ -245,6 +256,16 @@
 
             }
         }
+        .navbar-light .navbar-toggler{
+            margin-left: auto;
+        }
+        .navbar-collapse{
+            background: #000;
+        }
+        .navbar ul > li > a{
+            color: #fff;
+        }
+
     }
 
 
@@ -366,6 +387,14 @@
     .accordion-area{
         padding: 50px 0 0;
     }
+
+
+    .contact-info-wrapper{
+        margin-bottom: 40px;
+     }
+     .ts-footer{
+        margin-top: 0px;
+     }
     
 }
 
@@ -798,6 +827,12 @@
   .accordion-area{
       padding: 50px 0 0;
   }
+
+  .contact-info-wrapper{
+    margin-bottom: 40px;
+ }
+
+ 
 
 }
 

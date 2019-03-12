@@ -79,7 +79,6 @@
 // feature box
 .featured-box {
    padding: 30px 15px 30px 25px;
-   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
    margin: 3px;
 
    .icon {
@@ -105,7 +104,6 @@
    }
 
    &:hover {
-      transform: translate3d(0, -10px, 0);
 
       .ts-title {
          a {

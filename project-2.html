@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <!-- Site Title- -->
     <title>Build Bench</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
     <!-- Mobile Specific Metas ================================-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRoboto:400,500,700,900%7CPlayfair+Display:400,700,700i,900,900i%7CWork+Sans:400,500,600,700"
         rel="stylesheet">
@@ -25,6 +29,7 @@
 
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
     <!--For Plugins external css-->
     <link rel="stylesheet" href="assets/css/plugins.css" />
@@ -42,150 +47,153 @@
 <![endif]-->
 </head>
 
-<body class="boxed-layout">
-    <!-- section -->
+<body>
+    <!-- nav search -->
+    <div class="zoom-anim-dialog mfp-hide modal-searchPanel" id="modal-popup-2">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="xs-search-panel">
+                        <form action="#" method="POST" class="xs-search-group">
+                            <input type="search" class="form-control" name="search" id="search" placeholder="Search">
+                            <button type="submit" class="search-button"><i class="icon icon-search1"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End xs modal -->
+        <!-- end language switcher strart -->
+
     <!--Home page style-->
-    <div class="body-wrapper mx-auto">
-        <header>
-            <div class="nav ts-nav">
+    <header class="header-transparent">
+            <div class="nav ts-nav topbar">
                 <div class="container">
                     <div class="row ">
-                        <div class="col-lg-2 pr-0">
+                        <div class="col-lg-2">
                             <!--  <a class="nav-brand" href="#"></a>-->
-                            <div class=" main-logo">
+                            <div class="logo-area">
                                 <a href="./index.html" class="logo">
-                                    <img class="img-fluid" src="assets/images/logo.png" alt="">
+                                    <img class="img-fluid" src="assets/images/footer_logo.png" alt="">
                                 </a>
                             </div>
                         </div><!-- Col end -->
-                        <div class="col-lg-10 pl-0 text-right">
-                            <div class="top-bar">
+                        <div class="col-lg-10">
+                            <div class="top-bar pull-right">
                                 <ul class="header-nav-right-info">
                                     <li>
-                                        <i class="fa fa-phone-square"></i>
+                                        <i class="icon icon-phone2"></i>
+                                        <span>Give us a call</span>
                                         +001 458 654 528
                                     </li>
                                     <li>
-                                        <i class="fa fa-globe"></i>
+                                        <i class="icon icon-envelope"></i>
+                                        <span>Send mail to us</span>
+                                        contact@domain.com
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-global"></i>
+                                        <span>Visit our office at</span>
                                         1105 Roosevelt Street CA
                                     </li>
                                 </ul>
-                                <ul class="unstyled">
-                                    <li>
-                                        <a title="Facebook" href="#">
-                                            <span class="social-icon"><i class="fa fa-facebook"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a title="Twitter" href="#">
-                                            <span class="social-icon"><i class="fa fa-twitter"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a title="Google+" href="#">
-                                            <span class="social-icon"><i class="fa fa-google-plus"></i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a title="Linkdin" href="#">
-                                            <span class="social-icon"><i class="fa fa-linkedin"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
                             </div><!-- Top bar end -->
-                            <ul class="right-menu">
-                                <li class="nav-button">
-                                    <a href="#" class="quote-btn">Get a Quote</a>
-                                </li>
-
-                                <li class="nav-search">
-                                    <span id="search"><i class="icon icon-search1"></i></span>
-                                 </li><!-- Search end -->
-                                 
-                                 <li class="search-block" style="display: none;">
-                                    <input type="text" class="form-control" placeholder="Type and hit enter">
-                                    <span class="search-close">&times;</span>
-                                 </li><!-- Site search end -->
-                            </ul><!-- Right menu end -->
-                            <nav class="navbar navbar-expand-lg navbar-light">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                                   aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                   <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                   <ul class="navbar-nav ml-auto">
-                                      <li class="dropdown nav-item">
-                                         <a href="#" class="" data-toggle="dropdown">Home </a>
-                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="index.html">Home One</a></li>
-                                            <li><a href="index-2.html">Home Two</a></li>
-                                            <li><a href="index-3.html">Home Three</a></li>
-                                            <li><a href="index-4.html">Home Four</a></li>
-                                         </ul>
-                                      </li>
-                                      <li class="dropdown nav-item">
-                                         <a href="#" class="" data-toggle="dropdown">Company</a>
-                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="pricing.html">Pricing Table</a></li>
-                                            <li><a href="testimonial.html">Testimonial</a></li>
-                                         </ul>
-                                      </li>
-                                      <li class="nav-item dropdown">
-                                         <a href="#" class="" data-toggle="dropdown">Solutions</a>
-                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                         </ul>
-                 
-                                      </li>
-                                      <li class="nav-item dropdown active">
-                                         <a href="#" class="" data-toggle="dropdown">Projects</a>
-                                         <ul class="dropdown-menu active" role="menu">
-                                            <li><a href="project-1.html">Project 1</a></li>
-                                            <li class="active"><a href="project-2.html">Project 2</a></li>
-                                            <li><a href="project-details.html">Project Details</a></li>
-                                         </ul>
-                                      </li>
-                                      <li class="nav-item dropdown">
-                                         <a href="#" class="" data-toggle="dropdown">Features</a>
-                                         <ul class="dropdown-menu" role="menu">
-                                            <li><a href="typography.html">Typography</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                         </ul>
-                                      </li>
-                                      <li class="nav-item dropdown">
-                                            <a href="#"  class="" data-toggle="dropdown"> Blog </a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a href="#"  class="" data-toggle="dropdown"> Contact </a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="contact-1.html">Contact 1</a></li>
-                                                <li><a href="contact-2.html">Contact 2</a></li>
-                                            </ul>
-                                        </li>
-                                   </ul>
-                                </div>
-                             </nav>
-						</div>
+    
+                        </div>
                     </div><!-- .row end -->
                 </div><!-- .container end -->
             </div>
-        </header>
-        <!-- Header end -->
+    
+            <!-- navbar container start -->
+            <div class="navbar-container">
+                <div class="container">
+    
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="dropdown nav-item">
+                                    <a href="#" class="" data-toggle="dropdown">Home </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="index.html">Home One</a></li>
+                                        <li><a href="index-2.html">Home Two</a></li>
+                                        <li><a href="index-3.html">Home Three</a></li>
+                                        <li><a href="index-4.html">Home Four</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-item">
+                                    <a href="#" class="" data-toggle="dropdown">Company</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="pricing.html">Pricing Table</a></li>
+                                        <li><a href="testimonial.html">Testimonial</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="" data-toggle="dropdown">Solutions</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="service.html">Service</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+    
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a href="#" class="" data-toggle="dropdown">Projects</a>
+                                    <ul class="dropdown-menu active" role="menu">
+                                        <li><a href="project-1.html">Project 1</a></li>
+                                        <li class="active"><a href="project-2.html">Project 2</a></li>
+                                        <li><a href="project-details.html">Project Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="" data-toggle="dropdown">Features</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="typography.html">Typography</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="blog-left-sidebar.html" class="" data-toggle="dropdown"> Blog </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="blog-left-sidebar.html" class="" data-toggle="dropdown"> Contact </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="contact-1.html">Contact 1</a></li>
+                                        <li><a href="contact-2.html">Contact 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav-right ml-auto form-inline">
+                                <li class="nav-search-btn">
+                                    <a href="#modal-popup-2" class="xs-modal-popup"><i class="icon icon-search1"></i></a>
+                                    <!-- xs modal -->
+                                </li>
+                                <li class="nav-button">
+                                    <a href="#" class="quote-btn">Get a Quote</a>
+                                </li>
+                            </ul><!-- Right menu end -->
+                        </div>
+    
+                    </nav>
+                </div>
+            </div>
+            <!-- navbar contianer end -->
+    </header>
+    <!-- Header end --> 
         
-            <div id="banner-area" class="banner-area bg-overlay">
+            <div id="banner-area" class="banner-area bg-overlay"  style="background-image:url(assets/images/banner/banner_img.jpg)">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <div class="banner-heading"  style="background-image:url(assets/images/banner/banner_img.jpg)">
+                            <div class="banner-heading">
                             <h1 class="banner-title">Recent Projects</h1>
                             <ol class="breadcrumb">
                                 <li><a href="#">Home</a></li>
@@ -403,7 +411,6 @@
                 <!-- End Copyright Container -->
             </div>
             <!-- Copyright end -->
-    </div>
 
 
 
@@ -417,6 +424,7 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery-mixtub.js"></script>
     <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

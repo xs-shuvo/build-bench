@@ -388,10 +388,10 @@ h6 {
    color: #fff;
 	backface-visibility: hidden;
 	margin-top: 5px;
-}
+	min-height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-.banner-area.bg-overlay:after {
-   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .banner-area .container {
