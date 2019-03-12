@@ -1832,14 +1832,13 @@ ul.navbar-nav li .dropdown-menu {
 }
 
 ul.navbar-nav li .dropdown-menu li a {
-  font-size: 13px;
+  font-size: 14px;
   display: block;
   color: #fff;
   text-transform: uppercase;
   padding: 12px 0;
   border-top: 1px solid #3e3e3e;
   border-bottom: 1px solid #040404;
-  font-weight: 600;
 }
 
 ul.navbar-nav li .dropdown-menu li a:hover {
@@ -2196,7 +2195,7 @@ ul.navbar-nav {
   margin: 0;
 }
 
-.topbar .header-nav-right-info li span {
+.topbar .header-nav-right-info li label {
   display: block;
   font-weight: 700;
   margin-bottom: 0;
